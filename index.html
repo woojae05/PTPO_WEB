@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTPO</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <link href="img/mini-logo.png" rel="icon" />
+    <link href="img/mini-logo.png" rel="apple-touch-icon" />
+  </head>
+
+  <body>
+    <section id="header">
+      <div class="header">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="./img/logo.png" />
+          </a>
+        </div>
+        <div class="header-items">
+          <div class="dropdown">
+            <div class="header-item font-style">포트폴리오</div>
+            <div class="dropdown-item font-style">
+              <a href="#">기업체</a>
+              <a href="#">대회</a>
+              <a href="#">프로젝트</a>
+              <a href="#">공부</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="header-item font-style">대회</div>
+            <div class="dropdown-item">
+              <a href="#">link1</a>
+              <a href="#">link1</a>
+              <a href="#">link1</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./ranking.html">
+              <div class="header-item font-style" style="margin-right: 50px">
+                랭킹
+              </div>
+            </a>
+            <!-- <div class="dropdown-item">
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                    </div> -->
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="header-profile">
+            <img src="./img/ex-profile.jpg" class="header-profile-img" />
+          </div>
+          <div class="dropdown-item dropdown-item-profile font-style">
+            <a href="my_profile.html" class="profile-item">
+              <img src="./img/profile-item-img.png" class="profile-item-img" />
+              <div class="profile-item-name">프로필</div>
+            </a>
+            <a href="save_list.html">
+              <img src="./img/profile-item-img2.png" class="profile-item-img" />
+              <div class="profile-item-name">저장목록</div>
+            </a>
+            <a href="#"
+              ><img
+                src="./img/profile-item-img3.png"
+                class="profile-item-img"
+              />
+              <div class="profile-item-name">설정</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main-content">
+      <div class="main-content">
+        <input
+          type="button"
+          id="night_day"
+          value="라이트모드"
+          class="btn-effect effect1 light-btn-effect light-btn light-btn-container font-style"
+          onclick="modeClick(this.value)"
+          onmouseover="changeBtnText(this.value)"
+          onmouseleave="changeBtnText(this.value)"
+        />
+        <!-- <input type="button" id="night_day" value="라이트모드" class="light-btn-container font-style" onclick="
+            if(document.querySelector('#night_day').value === '라이트모드'){
+                document.querySelector('body').style.backgroundColor = '#272727'
+                document.querySelector('.header').style.backgroundColor='#2a2a2a'
+                document.querySelector('body').style.color='white'
+                document.querySelector('.left-menu-bar-container').style.backgroundColor='#272727'
+                document.querySelector('.light-btn-container').style.backgroundColor='#2a2a2a'
+                document.querySelector()
+            }"> -->
+
+        <span class="more">
+          <div class="font-style">메뉴</div>
+          <span class="blind"> </span>
+        </span>
+        <div class="left-menu-bar-container">
+          <ul class="list font-style" style="font-size: 30px">
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+            <li>link5</li>
+          </ul>
+        </div>
+        <div class="middle-bar-container">
+          <div class="middle-bar-title font-style">Feed</div>
+          <hr width="auto" color="#faa860" size="2" />
+        </div>
+        <div class="right-bar-container">
+          <div class="right-bar-title font-style">Friends</div>
+          <hr width="auto" color="#faa860" size="2" />
+        </div>
+      </div>
+    </section>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/ptpo.js"></script>
+  </body>
+</html>
