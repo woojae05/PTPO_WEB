@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="img/mini-logo.png" rel="icon">
+    <link href="img/mini-logo.png" rel="apple-touch-icon">
+</head>
+
+<body>
+    <link href="style.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+    <section id="header">
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="./img/logo.png">
+                </a>
+            </div>
+            <div class="header-items">
+                <!-- <div class="dropdown">
+                    <div class="header-item font-style">
+                        포트폴리오
+                    </div>
+                    <div class="dropdown-item font-style">
+                        <a href="#">기업체</a>
+                        <a href="#">대회</a>
+                        <a href="#">프로젝트</a>
+                        <a href="#">공부</a>
+                    </div>
+                </div> -->
+                <div class="dropdown">
+                    <div class="header-item font-style">
+                        대회
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="./ranking.html">
+                        <div class="header-item font-style" style="margin-right: 50px">
+                            랭킹
+                        </div>
+                    </a>
+                    <!-- <div class="dropdown-item">
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="header-profile">
+                    <img src="./img/ex-profile.jpg" class="header-profile-img">
+                </div>
+                <div class="dropdown-item dropdown-item-profile font-style">
+                    <a href="my_profile.html" class="profile-item">
+                        <img src="./img/profile-item-img.png" class="profile-item-img">
+                        <div class="profile-item-name">프로필</div>
+                    </a>
+                    <a href="save_list.html">
+                        <img src="./img/profile-item-img2.png" class="profile-item-img">
+                        <div class="profile-item-name">저장목록</div>
+                    </a>
+                    <a href="#"><img src="./img/profile-item-img3.png" class="profile-item-img">
+                        <div class="profile-item-name">설정</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <button type = "submit" class="new-feed font-style">
+        <img src="img/feed-add.png" class="new-feed-img">
+        <div class ="new-feed-text">
+            추가
+        </div>
+    </button>
+    <input
+    type="button"
+    id="night_day"
+    value="라이트모드"
+    class="btn-effect effect1 light-btn-effect light-btn light-btn-container font-style"
+    onclick="modeClick(this.value)"
+    onmouseover="changeBtnText(this.value)"
+    onmouseleave="changeBtnText(this.value)"
+  />
+    <div class="profile-main-content">
+        <section id="profile-bar">
+            <div class="profile-bar">
+                <div class="profile-bar-profile-image">
+
+                </div>
+                <div class="profile-bar-profile-explanation font-style">
+                    <div class="profile-bar-profile-explanation-text-container">
+                        포트폴리오 관리 웹입니다.가나다라마바사아자차카타파하아야어여오요우유으이12345678910abcdefghighklmnopqrstuvwsyz
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="my-portfolio">
+            <div class="portfolio-classification-container">
+            </div>
+            <div class="my-portfolio" id="abc">
+                <!-- <div class="my-portfolio-top-contents">
+                    <div class="my-portfolio-title font-style">
+                        섹션 1
+                    </div>
+
+                    <button class="my-portfolio-modify">
+                        <img src="img/modify-item.png" class="my-portfolio-modify-img">
+                    </button>
+                    <button class="my-portfolio-print">
+                        <img src="img/print-item.png" class="my-portfolio-print-img">
+                    </button>
+
+                </div>
+                <hr width=auto color="#faa860" size=2 class="my-portfolio-header-line" /> -->
+            </div>
+            <div class="my-portfolio">
+                <div class="my-portfolio-top-contents">
+                    <div class="my-portfolio-title font-style">
+                        섹션 2
+                    </div>
+
+                    <button class="my-portfolio-modify">
+                        <img src="img/modify-item.png" class="my-portfolio-modify-img">
+                    </button>
+                    <button class="my-portfolio-print">
+                        <img src="img/print-item.png" class="my-portfolio-print-img">
+                    </button>
+
+                </div>
+                <hr width=auto color="#faa860" size=2 class="my-portfolio-header-line" />
+            </div>
+            <div class="my-portfolio">
+                <div class="my-portfolio-top-contents">
+                    <div class="my-portfolio-title font-style">
+                        섹션 3
+                    </div>
+
+                    <button class="my-portfolio-modify">
+                        <img src="img/modify-item.png" class="my-portfolio-modify-img">
+                    </button>
+                    <button class="my-portfolio-print">
+                        <img src="img/print-item.png" class="my-portfolio-print-img">
+                    </button>
+
+                </div>
+                <hr width=auto color="#faa860" size=2 class="my-portfolio-header-line" />
+            </div>
+            <div class="my-portfolio">
+                <div class="my-portfolio-top-contents">
+                    <div class="my-portfolio-title font-style">
+                        섹션 4
+                    </div>
+
+                    <button class="my-portfolio-modify">
+                        <img src="img/modify-item.png" class="my-portfolio-modify-img">
+                    </button>
+                    <button class="my-portfolio-print">
+                        <img src="img/print-item.png" class="my-portfolio-print-img">
+                    </button>
+
+                </div>
+                <hr width=auto color="#faa860" size=2 class="my-portfolio-header-line" />
+            </div>
+        </section>
+    </div>
+
+    </section>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/my-profile.js"></script>
+    <script src="./js/post.js"></script>
+</body>
+
+</html>
