@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랭킹</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="img/mini-logo.png" rel="icon">
+    <link href="img/mini-logo.png" rel="apple-touch-icon">
+</head>
+
+<body>
+    <link href="style.css" rel="stylesheet">
+    <link href="ranking.css" rel="stylesheet">
+    <section id="header">
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="./img/logo.png">
+                </a>
+            </div>
+            <div class="header-items">
+                <!-- <div class="dropdown">
+                    <div class="header-item font-style">
+                        포트폴리오
+                    </div>
+                    <div class="dropdown-item font-style">
+                        <a href="#">기업체</a>
+                        <a href="#">대회</a>
+                        <a href="#">프로젝트</a>
+                        <a href="#">공부</a>
+                    </div>
+                </div> -->
+                <div class="dropdown">
+                    <div class="header-item font-style">
+                        대회
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="./ranking.html">
+                        <div class="header-item font-style"
+                            style="margin-right: 50px; background-color: #faa860; color: white;">
+                            랭킹
+                        </div>
+                    </a>
+                    <!-- <div class="dropdown-item">
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                        <a href="#">link1</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="header-profile">
+                    <img src="./img/ex-profile.jpg" class="header-profile-img">
+                </div>
+                <div class="dropdown-item dropdown-item-profile font-style">
+                    <a href="my_profile.html" class="profile-item">
+                        <img src="./img/profile-item-img.png" class="profile-item-img">
+                        <div class="profile-item-name">프로필</div>
+                    </a>
+                    <a href="save_list.html">
+                        <img src="./img/profile-item-img2.png" class="profile-item-img">
+                        <div class="profile-item-name">저장목록</div>
+                    </a>
+                    <a href="#"><img src="./img/profile-item-img3.png" class="profile-item-img">
+                        <div class="profile-item-name">설정</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="ranking-main-content">
+        <div class="ranking-main-content">
+            <input
+          type="button"
+          id="night_day"
+          value="라이트모드"
+          class="btn-effect effect1 light-btn-effect light-btn light-btn-container font-style"
+          onclick="modeClick(this.value)"
+          onmouseover="changeBtnText(this.value)"
+          onmouseleave="changeBtnText(this.value)"
+        />
+            <div class="ranking-bar">
+                <div class="ranking-bar-title-box">
+                    <img src="img/ranking-item.png" class="ranking-bar-title-ranking-item">
+                    <div class ="ranking-bar-title font-style">
+                        랭킹
+                    </div>
+                </div>
+                <div class="ranking-bar-classification">
+                    <div class="ranking-bar-classification-ranking font-style">
+                        순위
+                    </div>
+                    <div class="ranking-bar-classification-name-box">
+                        <div class="ranking-bar-classification-name font-style">
+                            이름
+                        </div>
+                    </div>
+                    <div class="ranking-bar-classification-content-name-box">
+                        <div class="ranking-bar-classification-content-name font-style">
+                            게시물 이름
+                        </div>
+                    </div>
+                    <div class="ranking-bar-classification-point-box">
+                        <div class="ranking-bar-classification-point font-style">
+                            하트 수
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-bar-main">
+                    <div class="ranking-bar-ranking-item">
+                        <div class="ranking-bar-ranking-item-title font-style">
+                            1
+                        </div>
+                        <div class="ranking-bar-ranking-item-profile">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-box">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-name-box">
+                            <div class="ranking-bar-ranking-item-name font-style">
+                                이름
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-content-name-box">
+                            <div class="ranking-bar-ranking-item-content-name font-style">
+                                포트폴리오1
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-point-box font-style">
+                            <div class="ranking-bar-ranking-item-point">
+                                999
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-bar-ranking-item">
+                        <div class="ranking-bar-ranking-item-title font-style">
+                            2
+                        </div>
+                        <div class="ranking-bar-ranking-item-profile">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-box">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-name-box">
+                            <div class="ranking-bar-ranking-item-name font-style">
+                                이름
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-content-name-box">
+                            <div class="ranking-bar-ranking-item-content-name font-style">
+                                포트폴리오2
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-point-box font-style">
+                            <div class="ranking-bar-ranking-item-point">
+                                99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranking-bar-ranking-item">
+                        <div class="ranking-bar-ranking-item-title font-style">
+                            3
+                        </div>
+                        <div class="ranking-bar-ranking-item-profile">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-box">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-name-box">
+                            <div class="ranking-bar-ranking-item-name font-style">
+                                이름
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-content-name-box">
+                            <div class="ranking-bar-ranking-item-content-name font-style">
+                                포트폴리오3
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-point-box font-style">
+                            <div class="ranking-bar-ranking-item-point">
+                                9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranking-bar-ranking-item">
+                        <div class="ranking-bar-ranking-item-title font-style">
+                            4
+                        </div>
+                        <div class="ranking-bar-ranking-item-profile">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-box">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-name-box">
+                            <div class="ranking-bar-ranking-item-name font-style">
+                                이름
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-content-name-box">
+                            <div class="ranking-bar-ranking-item-content-name font-style">
+                                포트폴리오4
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-point-box font-style">
+                            <div class="ranking-bar-ranking-item-point">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranking-bar-ranking-item">
+                        <div class="ranking-bar-ranking-item-title font-style">
+                            5
+                        </div>
+                        <div class="ranking-bar-ranking-item-profile">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-box">
+
+                        </div>
+                        <div class="ranking-bar-ranking-item-name-box">
+                            <div class="ranking-bar-ranking-item-name font-style">
+                                이름
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-content-name-box">
+                            <div class="ranking-bar-ranking-item-content-name font-style">
+                                포트폴리오5
+                            </div>
+                        </div>
+                        <div class="ranking-bar-ranking-item-point-box font-style">
+                            <div class="ranking-bar-ranking-item-point">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/ranking.js"></script>
+</body>
+
+</html>

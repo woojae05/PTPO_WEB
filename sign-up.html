@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 가입</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <link href="img/mini-logo.png" rel="icon" />
+    <link href="img/mini-logo.png" rel="apple-touch-icon" />
+  </head>
+  <body>
+    <link href="style.css" rel="stylesheet" />
+    <link href="sign-up.css" rel="stylesheet" />
+    <section id="signup-header">
+      <div class="signup-header">
+        <img src="img/logo.png" class="signup-header-logo" />
+      </div>
+    </section>
+
+    <section id="signup-main-bar">
+      <div class="signup-main-bar">
+        <div class="sign-up-container">
+          <div class="sign-up-main-title font-style">회원가입</div>
+          <hr class="sign-up-division-line" / width="94%" color="#faa860">
+          <div class="idnickname-container">
+            <div class="id-input-wrap">
+              <div class="id-input-text-wrap">
+                <div class="id-input-text font-style">ID</div>
+                <button
+                  type="submit"
+                  class="nickname-double-check-btn font-style"
+                >
+                  중복확인
+                </button>
+              </div>
+              <input
+                type="text"
+                class="id-input"
+                placeholder="아이디를 입력해주세요"
+                name="id"
+              />
+            </div>
+            <div class="nickname-input-wrap">
+              <div class="nickname-input-text-wrap">
+                <div class="nickname-input-text font-style">닉네임</div>
+                <button
+                  type="submit"
+                  class="nickname-double-check-btn font-style"
+                >
+                  중복확인
+                </button>
+              </div>
+
+              <input
+                type="text"
+                class="nickname-input"
+                placeholder="닉네임을 입력해주세요"
+                name="nickname"
+              />
+            </div>
+          </div>
+          <div class="email-container">
+            <div class="e-mail-input-text font-style">이메일</div>
+            <input
+              type="email"
+              class="e-mail-input"
+              name="mail"
+              placeholder="ABC@ABC.COM"
+            />
+          </div>
+          <div class="password-container">
+            <div class="password-input-text font-style">비밀번호</div>
+            <input
+              type="password"
+              class="password-input"
+              name="pw"
+              placeholder="8자리 이상 입력해주세요"
+            />
+          </div>
+          <div class="checkpassword-container">
+            <div class="checkpassword-input-text font-style">
+              비밀번호 재확인
+            </div>
+            <input
+              type="password"
+              class="checkpassword-input"
+              name="checkpw"
+              placeholder="8자리 이상 입력해주세요"
+            />
+          </div>
+
+          <div class="agree-wrap">
+            <div class="first-agree-wrap">
+              <input
+                type="checkbox"
+                name="agree_checkbox"
+                class="consent-check1"
+              />
+              <div class="consent-check1-text font-style">
+                위 개인정보를 저장,수집,활용 하는것에 동의합니다
+              </div>
+            </div>
+            <!-- <div class="second-agree-wrap">
+                <input type="checkbox" class="consent-check2" />
+                <div class="consent-check2-text font-style"></div>
+              </div> -->
+          </div>
+          <button type="submit" onclick="signupbtn()" class="sign-up-btn">
+            <div class="sign-up-btn-text font-style">회원가입</div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/sign-up.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>

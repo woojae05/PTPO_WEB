@@ -1,0 +1,23 @@
+.save-list{
+    width: 75%;
+    height: auto;
+    margin: 30px auto;
+    border : 3px solid #faa860;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.save-list-horizontal-box{
+    width: auto;
+    height: auto;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-list-item{
+    width: 300px;
+    height: 300px;
+    border : 3px solid #faa860;
+    margin: 0px 30px;
+    border-radius: 20px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="img/mini-logo.png" rel="icon">
+    <link href="img/mini-logo.png" rel="apple-touch-icon">
+</head>
+
+<body>
+    <link href="style.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <section id="login-header">
+        <div class="login-header">
+            <img src="img/logo.png" class="login-header-logo">
+        </div>
+    </section>
+
+    <section id="login-bar">
+        <div class="login-bar">
+            <div class="login-container">
+                <div class="user-id-box-text font-style" id="id">아이디</div>
+                <input type="text" class="user-id-box" name="id" placeholder="아이디를 입력해주세요">
+
+                <div class="user-password-box-text font-style">비밀번호</div>
+                <input type="password" class="user-password-box" name="pw" placeholder="비밀번호를 입력해주세요">
+
+                <button type="submit" onclick=loginbtn() class="login-sumbit-button">
+                    <div class="login-sumbit-button-text font-style">
+                        로그인
+                    </div>
+                </button>
+
+            </div>
+            <div class="login-continue-container">
+                <input type="checkbox" name="checkbox" class="login-continue-checkbox">
+                <div class="login-continue-checkbox-text font-style">로그인 상태 유지</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="./js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
