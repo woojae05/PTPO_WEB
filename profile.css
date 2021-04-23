@@ -93,6 +93,7 @@ body {
   margin-left: auto;
   background-color: white;
   outline: none;
+  cursor: pointer;
 }
 .my-portfolio-print {
   width: 70px;
@@ -102,6 +103,7 @@ body {
   border-top-right-radius: 20px;
   background-color: white;
   outline: none;
+  cursor: pointer;
 }
 .my-portfolio-print-img {
   width: 45px;
