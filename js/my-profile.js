@@ -85,3 +85,11 @@ function changeBtnText(nowText) {
     document.querySelector("#night_day").value = "라이트모드";
   }
 }
+
+function changetextbox(nowstate) {
+  if (nowstate === "변경") {
+    document.querySelector("#renamebtn").className =
+      "my-portfolio-renamebtn-modify font-style";
+    document.querySelector("#renamebtn").value = "확인";
+  }
+}
