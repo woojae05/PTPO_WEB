@@ -63,10 +63,11 @@ body {
 .my-portfolio-top-contents {
   display: flex;
   height: auto;
+  max-height: 63.2;
 }
 .rename-textbox {
   width: auto;
-  height: 43px;
+  height: 43.2px;
   margin: 10px;
   display: none;
 }
