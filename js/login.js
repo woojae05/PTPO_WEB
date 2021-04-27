@@ -6,13 +6,13 @@ function loginbtn() {
     id: id,
     pw: pw,
   };
-  $.post("http://10.80.161.242:8888/auth/login", data, function (response) {
+  $.post("http://localhost:8888/auth/login", data, function (response) {
     const status = response.status;
 
     if (status === 200) {
       window.alert("로그인 성공");
       localStorage.setItem("access_token", response.data.token);
-      window.location.replace("http://10.80.162.87:5500/web-project");
+      window.location.replace("http://10.80.162.87:5501/index.html");
     }
 
     if (status === 401) {

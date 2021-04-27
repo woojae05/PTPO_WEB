@@ -21,13 +21,13 @@ function signupbtn() {
     email: mail,
     pw: pw,
   };
-  $.post("http://10.80.161.242:8888/auth/register", data, function (response) {
+  $.post("http://localhost:8888/auth/register", data, function (response) {
     const status = response.status;
 
     if (status === 200) {
       window.alert("가입 성공");
       window.location.replace(
-        "http://10.80.162.87:5500/web-project/login.html"
+        "http://10.80.162.87:5501/web-project/login.html"
       );
     }
   }).fail(function (err) {
