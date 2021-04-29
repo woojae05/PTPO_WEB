@@ -12,6 +12,9 @@
   width: 160px;
   margin: 0px auto;
 }
+.signup-header a {
+  margin: 0px auto;
+}
 
 .signup-main-bar {
   width: 800px;
