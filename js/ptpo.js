@@ -82,3 +82,5 @@ function changeBtnText(nowText) {
     document.querySelector("#night_day").value = "라이트모드";
   }
 }
+
+function logoutbtn()
