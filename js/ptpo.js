@@ -83,4 +83,8 @@ function changeBtnText(nowText) {
   }
 }
 
-function logoutbtn()
+function logoutbtn() {
+  window.alert("로그아웃 되었습니다.");
+  localStorage.removeItem("access_token");
+  window.location.replace("http://10.80.162.87:5501/nonemember-index.html");
+}
