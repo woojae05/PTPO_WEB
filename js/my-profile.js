@@ -131,3 +131,9 @@ const clickCheck = (event) => {
     containerChilds[1].style.display = "none";
   }
 };
+
+const deletePostBtn = () => {
+  $.ajax({
+    url: "http://localhost:8888/delete",
+  });
+};
