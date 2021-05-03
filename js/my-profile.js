@@ -116,24 +116,3 @@ const card = document.querySelectorAll(".my-portfolio-renamebtn-complete");
 card[1].addEventListener("click", (event) => {
   console.log(event.path[1]);
 });
-
-const clickCheck = (event) => {
-  event.stopPropagation();
-  const container = event.target.parentNode;
-  const containerChilds = container.childNodes;
-  containerChilds[3].style.display = "inline-block";
-  containerChilds[5].className = "my-portfolio-renamebtn-modify";
-  if (containerChilds[1].style.display === "none") {
-    containerChilds[1].style.display = "inline-block";
-    containerChilds[3].style.display = "none";
-    containerChilds[5].className = "my-portfolio-renamebtn-complete";
-  } else {
-    containerChilds[1].style.display = "none";
-  }
-};
-
-const deletePostBtn = () => {
-  $.ajax({
-    url: "http://localhost:8888/delete",
-  });
-};
